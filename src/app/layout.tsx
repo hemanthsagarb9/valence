@@ -3,7 +3,7 @@ import { ThemeProvider } from "@/lib/theme";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Chemistry Tutor — Interactive Periodic Table",
+  title: "Periodic Table",
   description: "Learn chemistry through patterns, not memorisation. Explore the interactive periodic table with electron shells, trends, bonding, and quizzes.",
 };
 
