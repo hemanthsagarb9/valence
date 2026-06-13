@@ -14,6 +14,8 @@ import ElementCell from "./ElementCell";
 import ElementDetailCard from "./ElementDetailCard";
 import BondingPanel from "./BondingPanel";
 import QuizPanel from "./QuizPanel";
+import ElectronConfigBuilder from "./ElectronConfigBuilder";
+import FactsPanel from "./FactsPanel";
 import FamilyLegend from "./FamilyLegend";
 import FamilyInfoPanel from "./FamilyInfoPanel";
 import TrendSelector from "./TrendSelector";
@@ -40,7 +42,7 @@ export default function PeriodicTable() {
 
   // Core state
   const [selectedElement, setSelectedElement] = useState<Element | null>(null);
-  const [level, setLevel] = useState<LearningLevel>("school");
+  const [level, setLevel] = useState<LearningLevel>("advanced");
   const [mode, setMode] = useState<PeriodicTableMode>("explore");
 
   // Mode-specific state
@@ -172,6 +174,8 @@ export default function PeriodicTable() {
     { id: "collections", label: "Collections" },
     { id: "hunt", label: "Element Hunt" },
     { id: "quiz", label: "Quiz" },
+    { id: "config-builder", label: "Config Builder" },
+    { id: "facts", label: "Facts" },
   ];
 
 
@@ -647,8 +651,34 @@ export default function PeriodicTable() {
                 </motion.div>
               )}
 
+              {/* Config Builder — right panel */}
+              {!selectedElement && mode === "config-builder" && (
+                <motion.div
+                  key="config-builder"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.15 }}
+                >
+                  <ElectronConfigBuilder onClose={() => handleModeChange("explore")} />
+                </motion.div>
+              )}
+
+              {/* Facts — right panel */}
+              {!selectedElement && mode === "facts" && (
+                <motion.div
+                  key="facts"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.15 }}
+                >
+                  <FactsPanel onClose={() => handleModeChange("explore")} />
+                </motion.div>
+              )}
+
               {/* Default: welcome / empty state */}
-              {!selectedElement && !(bondElements[0] && bondElements[1]) && mode !== "families" && mode !== "trends" && mode !== "bonding" && mode !== "collections" && mode !== "hunt" && mode !== "quiz" && (
+              {!selectedElement && !(bondElements[0] && bondElements[1]) && mode !== "families" && mode !== "trends" && mode !== "bonding" && mode !== "collections" && mode !== "hunt" && mode !== "quiz" && mode !== "config-builder" && mode !== "facts" && (
                 <motion.div
                   key="empty"
                   initial={{ opacity: 0 }}

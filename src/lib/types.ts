@@ -20,13 +20,17 @@ export type PeriodicTableMode =
   | "bonding"
   | "collections"
   | "hunt"
-  | "quiz";
+  | "quiz"
+  | "config-builder"
+  | "facts";
 
 export type TrendType =
   | "atomicRadius"
   | "ionizationEnergy"
   | "electronegativity"
-  | "metallicCharacter";
+  | "electronAffinity"
+  | "metallicCharacter"
+  | "zeff";
 
 export type CollectionCategory =
   | "technology"
@@ -56,11 +60,15 @@ export interface Element {
   electronegativity: number | null;
   atomicRadius: number | null;
   ionizationEnergy: number | null;
+  electronAffinity: number | null;
+  zeff: number | null;
   meltingPoint: number | null;
   boilingPoint: number | null;
   summary: string;
   realWorld: string;
   abundance: string;
+  jeeNote?: string;
+  successiveIE?: number[];
   row: number;
   col: number;
 }

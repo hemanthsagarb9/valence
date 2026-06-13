@@ -276,6 +276,756 @@ export const quizQuestions: QuizQuestion[] = [
     explanation: "Gold's color is a relativistic effect. Fast-moving inner electrons in gold experience time dilation, changing their orbital energies. This causes gold to absorb blue-violet light rather than reflecting all visible light like silver. Without relativity, gold would be silvery!",
     relatedElements: ["Au"],
   },
+  {
+    id: "q26",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Why does oxygen have a lower first ionisation energy than nitrogen, despite being to the right?",
+    options: [
+      "Oxygen has fewer electrons",
+      "Nitrogen's half-filled 2p³ subshell is extra stable, making it harder to ionise",
+      "Oxygen is more reactive so it loses electrons easily",
+      "The nuclear charge decreases from N to O"
+    ],
+    correctAnswer: "Nitrogen's half-filled 2p³ subshell is extra stable, making it harder to ionise",
+    explanation: "Nitrogen (2p³) has a half-filled p subshell, which is extra stable due to electron exchange energy and decreased electron-electron repulsion. Oxygen (2p⁴) must remove an electron from this stable configuration, so it's easier to ionise oxygen than nitrogen despite nitrogen being to the left.",
+    relatedElements: ["N", "O"],
+  },
+  {
+    id: "q27",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Which of the following correctly explains why beryllium has NO electron affinity (EA = 0)?",
+    options: [
+      "Beryllium is too small to accept electrons",
+      "Beryllium's 2s² subshell is filled, and Be⁻ would be less stable than Be, so the electron is not bound",
+      "Beryllium only forms covalent bonds",
+      "Noble gases repel electrons from beryllium"
+    ],
+    correctAnswer: "Beryllium's 2s² subshell is filled, and Be⁻ would be less stable than Be, so the electron is not bound",
+    explanation: "Beryllium has a stable filled 2s² configuration. Adding an electron would create Be⁻ with a 2s² 2p¹ arrangement, which is less stable and higher in energy than neutral Be. The electron cannot be bound, so beryllium has zero or negative electron affinity.",
+    relatedElements: ["Be"],
+  },
+  {
+    id: "q28",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Why does chlorine have a higher electron affinity than fluorine?",
+    options: [
+      "Chlorine is larger and attracts electrons more strongly",
+      "Fluorine is too small; electron-electron repulsion in the small 2p orbital outweighs the nuclear attraction",
+      "Chlorine has more valence electrons",
+      "Fluorine already has a full outer shell"
+    ],
+    correctAnswer: "Fluorine is too small; electron-electron repulsion in the small 2p orbital outweighs the nuclear attraction",
+    explanation: "Fluorine has the highest electronegativity but NOT the highest electron affinity. Fluorine's 2p orbitals are so small and compact that adding another electron creates significant repulsion. Chlorine's larger 3p orbital can accommodate an extra electron with less repulsion, making Cl's EA > F's EA.",
+    relatedElements: ["F", "Cl"],
+  },
+  {
+    id: "q29",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Why is the first ionisation energy of boron lower than beryllium, even though boron is to the right?",
+    options: [
+      "Boron has more electrons so they are easier to remove",
+      "Boron's 2p¹ electron is in a higher energy orbital than Be's 2s² electrons, and is shielded by the inner 1s² shell",
+      "Boron is smaller than beryllium",
+      "Beryllium has a lower nuclear charge"
+    ],
+    correctAnswer: "Boron's 2p¹ electron is in a higher energy orbital than Be's 2s² electrons, and is shielded by the inner 1s² shell",
+    explanation: "Beryllium's 2s² is more tightly bound than boron's 2p¹ electron. The 2p electron is higher in energy and experiences greater shielding from the 1s² core. Although boron has greater nuclear charge, this effect is outweighed by the higher orbital energy and shielding of the 2p electron.",
+    relatedElements: ["B", "Be"],
+  },
+  {
+    id: "q30",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Why do gallium and aluminium show similar chemical properties despite the d-block contraction?",
+    options: [
+      "Both are in the same group",
+      "The d-block contraction causes the 4s and 4p orbitals to contract, making Ga have a similar size and ionisation energy to Al despite being below it",
+      "Gallium is lighter than aluminium",
+      "Both form only covalent bonds"
+    ],
+    correctAnswer: "The d-block contraction causes the 4s and 4p orbitals to contract, making Ga have a similar size and ionisation energy to Al despite being below it",
+    explanation: "In period 4, the 10 d-block elements have high nuclear charges that cause significant contraction of all orbitals. Gallium (after the d-block) has a similar atomic radius and ionisation energy to aluminium (before the d-block), making them anomalously similar. This is the lanthanide/d-block contraction effect.",
+    relatedElements: ["Ga", "Al"],
+  },
+  {
+    id: "q31",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Which of the following noble gas compounds exists and demonstrates that noble gases are not completely inert?",
+    options: [
+      "XeF₂",
+      "HeF₂",
+      "NeF₂",
+      "ArF₄"
+    ],
+    correctAnswer: "XeF₂",
+    explanation: "XeF₂ is a stable, well-known noble gas compound. Xenon's large size and high polarisability allow it to form bonds with highly electronegative fluorine. Helium and neon are too small and have too high ionisation energies to form stable compounds; argon compounds are extremely unstable.",
+    relatedElements: ["Xe", "F"],
+  },
+  {
+    id: "q32",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Which pair shows a true diagonal relationship in the periodic table?",
+    options: [
+      "Na and Ca",
+      "Li and Mg",
+      "B and Si",
+      "O and S"
+    ],
+    correctAnswer: "Li and Mg",
+    explanation: "Lithium and magnesium show a diagonal relationship: both form compounds with limited solubility in water, form covalent compounds, and have similar charge-to-size ratios. This is because Mg (though lower in the group) has a similar ionic radius to Li due to increased nuclear charge. Other diagonal pairs like B-Si and Be-Al also show this relationship.",
+    relatedElements: ["Li", "Mg"],
+  },
+  {
+    id: "q33",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "What is the electron configuration of copper, and why does it deviate from the expected Aufbau order?",
+    options: [
+      "[Ar] 3d⁹ 4s² — copper prefers a full 4s orbital",
+      "[Ar] 3d¹⁰ 4s¹ — a fully filled d subshell is extra stable",
+      "[Ar] 3d⁸ 4s² — copper is not a typical transition metal",
+      "[Ar] 3d¹¹ 4s⁰ — copper has 11 d electrons"
+    ],
+    correctAnswer: "[Ar] 3d¹⁰ 4s¹ — a fully filled d subshell is extra stable",
+    explanation: "Copper's actual configuration is [Ar] 3d¹⁰ 4s¹, not the expected [Ar] 3d⁹ 4s². One electron moves from 4s to 3d to achieve a fully filled d₁₀ subshell, which has extra exchange energy stability. This is similar to chromium's anomaly with a half-filled d⁵.",
+    relatedElements: ["Cu"],
+  },
+  {
+    id: "q34",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Which d-block element has a fully filled d subshell like copper and shows similar anomalous electron configuration?",
+    options: [
+      "Silver (Ag)",
+      "Gold (Au)",
+      "Palladium (Pd)",
+      "Zinc (Zn)"
+    ],
+    correctAnswer: "Silver (Ag)",
+    explanation: "Silver's configuration is [Kr] 4d¹⁰ 5s¹, analogous to copper's [Ar] 3d¹⁰ 4s¹. Gold is [Xe] 4f¹⁴ 5d¹⁰ 6s¹, also showing this pattern. Palladium is unique with [Kr] 4d¹⁰, and zinc is [Ar] 3d¹⁰ 4s², which is the normal order since the d subshell fills completely.",
+    relatedElements: ["Ag", "Cu"],
+  },
+  {
+    id: "q35",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Why do transition metals show variable oxidation states?",
+    options: [
+      "The 3d and 4s electrons have similar ionisation energies, so electrons from both can be removed in different amounts",
+      "Transition metals have incomplete p subshells",
+      "Variable oxidation states are impossible for transition metals",
+      "Only the d electrons are involved in bonding"
+    ],
+    correctAnswer: "The 3d and 4s electrons have similar ionisation energies, so electrons from both can be removed in different amounts",
+    explanation: "In transition metals, the 3d and 4s orbital energies are very close. This means electrons from both orbitals can be removed with similar energy, allowing the metal to lose 1, 2, 3, or more electrons depending on the chemical environment. This gives transition metals multiple stable oxidation states.",
+    relatedElements: ["Fe", "Mn", "Cr"],
+  },
+  {
+    id: "q36",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "What is the lanthanide contraction and how does it affect 5d transition metals?",
+    options: [
+      "The lanthanide contraction increases the size of 5d metals compared to 4d metals",
+      "The lanthanide contraction causes 5d elements to have similar sizes to 4d elements above them, making their properties anomalously similar",
+      "The lanthanide contraction only affects lanthanides, not d-block elements",
+      "The lanthanide contraction causes 5d elements to be much larger than 4d elements"
+    ],
+    correctAnswer: "The lanthanide contraction causes 5d elements to have similar sizes to 4d elements above them, making their properties anomalously similar",
+    explanation: "The 14 lanthanides (4f electrons) have high nuclear charge but poor shielding, contracting all orbitals after them. This causes 5d elements like tungsten and platinum to be almost the same size as their 4d neighbors above them (Mo, Ru, Rh, Pd, Ag). This unusual size similarity leads to similar chemical properties.",
+    relatedElements: ["W", "Mo", "Pt"],
+  },
+  {
+    id: "q37",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Which element has a partially filled d subshell and is known for its ability to form multiple stable oxides and compounds?",
+    options: [
+      "Zinc (Zn)",
+      "Manganese (Mn)",
+      "Copper (Cu)",
+      "Iron (Fe)"
+    ],
+    correctAnswer: "Iron (Fe)",
+    explanation: "Iron has the configuration [Ar] 3d⁶ 4s², with a partially filled 3d subshell. It forms multiple oxides (FeO, Fe₂O₃, Fe₃O₄) and compounds with oxidation states ranging from 0 to +6, though +2 and +3 are most common. This is characteristic of transition metals with incomplete d subshells.",
+    relatedElements: ["Fe"],
+  },
+  {
+    id: "q38",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Palladium shows an unusual electron configuration of [Kr] 4d¹⁰ with no 5s electrons. What does this tell us about the stability of a full d subshell?",
+    options: [
+      "A full d subshell is less stable than 4s electrons",
+      "Palladium is not a transition metal",
+      "A fully filled d₁₀ configuration is so stable that all 4s electrons can be removed, making Pd an exception in the d-block",
+      "Palladium is radioactive"
+    ],
+    correctAnswer: "A fully filled d₁₀ configuration is so stable that all 4s electrons can be removed, making Pd an exception in the d-block",
+    explanation: "Palladium's unique [Kr] 4d¹⁰ configuration (with zero 5s electrons) shows that a completely filled d subshell is extremely stable. Unlike other d-block metals that retain their s electrons, palladium's exchange energy in the d₁₀ state is so favourable that it does not keep a 5s² orbital.",
+    relatedElements: ["Pd"],
+  },
+  {
+    id: "q39",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Why are noble gas compounds like XeF₄ possible while XeF₃ is not stable?",
+    options: [
+      "Xenon can only form compounds with an even number of fluorines",
+      "XeF₄ has a square planar geometry with bonding and lone pairs in octahedral arrangement (VSEPR), giving it stability; XeF₃ would be paramagnetic and unstable",
+      "Fluorine only bonds in even numbers",
+      "Xenon has 4 valence electrons so it forms 4 bonds"
+    ],
+    correctAnswer: "XeF₄ has a square planar geometry with bonding and lone pairs in octahedral arrangement (VSEPR), giving it stability; XeF₃ would be paramagnetic and unstable",
+    explanation: "XeF₄ has 8 electrons around Xe (4 bonding pairs with F, 2 lone pairs), forming a stable square planar geometry. XeF₃ would have an odd number of electrons and be paramagnetic/unpaired, making it unstable. The geometry and electron pairing in XeF₄ provide thermodynamic stability.",
+    relatedElements: ["Xe", "F"],
+  },
+  {
+    id: "q40",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Which transition metal is known for having the highest oxidation state possible in its compounds?",
+    options: [
+      "Iron (Fe, max +6 in [Fe(CN)₆]⁴⁻)",
+      "Manganese (Mn, max +7 in MnO₄⁻)",
+      "Chromium (Cr, max +6 in CrO₄²⁻)",
+      "Nickel (Ni, max +4)"
+    ],
+    correctAnswer: "Manganese (Mn, max +7 in MnO₄⁻)",
+    explanation: "Manganese (with 7 valence electrons: 3d⁵ 4s²) can lose all 7 electrons, achieving the +7 oxidation state in permanganate (MnO₄⁻). This is the highest oxidation state of any first-row transition metal. Chromium's +6 is the next highest among common transition metals.",
+    relatedElements: ["Mn"],
+  },
+  {
+    id: "q41",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Arrange these elements in order of increasing first ionisation energy: Na, Mg, Al, Si",
+    options: [
+      "Na < Mg < Al < Si",
+      "Na < Al < Mg < Si",
+      "Na < Mg < Si < Al",
+      "Al < Na < Mg < Si"
+    ],
+    correctAnswer: "Na < Al < Mg < Si",
+    explanation: "The expected order would be Na < Mg < Al < Si, but Al dips below Mg. Magnesium's 3s² is a filled subshell (extra stable), while aluminium must remove an electron from its higher-energy 3p¹ orbital. This makes Al's first IE lower than Mg's despite Al being to the right.",
+    relatedElements: ["Na", "Mg", "Al", "Si"],
+  },
+  {
+    id: "q42",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Which element in period 3 has the highest atomic radius?",
+    options: [
+      "Silicon (Si)",
+      "Sodium (Na)",
+      "Phosphorus (P)",
+      "Argon (Ar)"
+    ],
+    correctAnswer: "Sodium (Na)",
+    explanation: "Atomic radius decreases across a period due to increasing nuclear charge. Sodium (leftmost) has the fewest protons pulling its electrons and the most electron shielding, making it the largest atom in period 3.",
+    relatedElements: ["Na"],
+  },
+  {
+    id: "q43",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Arrange the halogens by electron affinity: F, Cl, Br, I",
+    options: [
+      "F > Cl > Br > I",
+      "Cl > F > Br > I",
+      "Cl > Br > F > I",
+      "I > Br > Cl > F"
+    ],
+    correctAnswer: "Cl > F > Br > I",
+    explanation: "Chlorine has the highest electron affinity, not fluorine. Although F is more electronegative, Cl's 3p orbital can accommodate an extra electron with less repulsion than F's compact 2p orbital. EA decreases down the group: Cl > Br > I. The anomaly is F < Cl.",
+    relatedElements: ["F", "Cl", "Br", "I"],
+  },
+  {
+    id: "q44",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Which of the following ions has the highest second ionisation energy?",
+    options: [
+      "Na⁺",
+      "Mg⁺",
+      "Al⁺",
+      "Si⁺"
+    ],
+    correctAnswer: "Al⁺",
+    explanation: "Al⁺ has the electron configuration 1s² 2s² 2p⁶ (isoelectronic with Ne). To remove the next electron, we must break open the stable neon core, requiring extreme energy. Mg⁺ (1s² 2s² 2p⁶ 3s¹) is also stable but easier to ionise since it has only one electron beyond the noble gas core.",
+    relatedElements: ["Al", "Mg"],
+  },
+  {
+    id: "q45",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Arrange these elements by metallic character (most metallic to least): Na, Mg, Al, Si",
+    options: [
+      "Si > Al > Mg > Na",
+      "Na > Mg > Al > Si",
+      "Mg > Na > Al > Si",
+      "Al > Na > Mg > Si"
+    ],
+    correctAnswer: "Na > Mg > Al > Si",
+    explanation: "Metallic character decreases across a period. Sodium (leftmost, one valence electron) is the most metallic. Silicon (rightmost, four valence electrons) is a metalloid/semimetal. The trend is: Na (most metallic) > Mg > Al > Si (least metallic).",
+    relatedElements: ["Na", "Mg", "Al", "Si"],
+  },
+  {
+    id: "q46",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Which element has the highest electronegativity, and by what principle?",
+    options: [
+      "Chlorine, because it is in group 17",
+      "Fluorine, because it is smallest and has the highest effective nuclear charge pulling electrons",
+      "Oxygen, because it forms the most compounds",
+      "Nitrogen, because it is most stable"
+    ],
+    correctAnswer: "Fluorine, because it is smallest and has the highest effective nuclear charge pulling electrons",
+    explanation: "Fluorine (F) is the most electronegative element. It has the highest electronegativity (3.98 on the Pauling scale) because it is the smallest atom with the fewest electron shells, maximising the attraction of its nucleus for shared electron pairs. Electronegativity increases up and to the right across the periodic table.",
+    relatedElements: ["F"],
+  },
+  {
+    id: "q47",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Which group of elements shows the most regular increase in successive ionisation energies?",
+    options: [
+      "Alkali metals (Group 1)",
+      "Alkaline earth metals (Group 2)",
+      "Halogens (Group 17)",
+      "Transition metals (Group 3-12)"
+    ],
+    correctAnswer: "Alkaline earth metals (Group 2)",
+    explanation: "Alkaline earth metals have the most predictable successive IE pattern. IE₁ (from 4s²), IE₂ (from 4s¹), and IE₃ (breaking the noble gas core) show large jumps. This is more regular than transition metals which show more variable patterns due to d-orbital involvement.",
+    relatedElements: ["Mg", "Ca", "Sr"],
+  },
+  {
+    id: "q48",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Which of these has a larger atomic radius: Potassium (K) or Calcium (Ca)?",
+    options: [
+      "Potassium",
+      "Calcium",
+      "They are the same size",
+      "It depends on the compound"
+    ],
+    correctAnswer: "Potassium",
+    explanation: "Although calcium is to the right of potassium in the same period, both are in period 4. Potassium (Group 1) has one valence electron and lower effective nuclear charge than calcium (Group 2). The larger size of potassium is primarily due to reduced effective nuclear charge, not periodicity.",
+    relatedElements: ["K", "Ca"],
+  },
+  {
+    id: "q49",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Why does boron trifluoride (BF₃) act as a Lewis acid despite fluorine being the most electronegative element?",
+    options: [
+      "Boron has only 6 electrons in its valence shell, making it electron-deficient and able to accept electron pairs",
+      "Fluorine is too electronegative and repels electrons",
+      "BF₃ has an ionic structure",
+      "Boron is more important than fluorine in determining acidity"
+    ],
+    correctAnswer: "Boron has only 6 electrons in its valence shell, making it electron-deficient and able to accept electron pairs",
+    explanation: "Boron trifluoride has boron with only 6 valence electrons (three B-F bonds, no lone pairs on B). This electron-deficiency makes BF₃ a Lewis acid capable of accepting electron pairs. The high electronegativity of F actually enhances this by withdrawing electron density from boron, increasing its Lewis acidity.",
+    relatedElements: ["B", "F"],
+  },
+  {
+    id: "q50",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Arrange these anions by size (largest to smallest): F⁻, Cl⁻, Br⁻, I⁻",
+    options: [
+      "F⁻ > Cl⁻ > Br⁻ > I⁻",
+      "I⁻ > Br⁻ > Cl⁻ > F⁻",
+      "Cl⁻ > I⁻ > Br⁻ > F⁻",
+      "Br⁻ > Cl⁻ > I⁻ > F⁻"
+    ],
+    correctAnswer: "I⁻ > Br⁻ > Cl⁻ > F⁻",
+    explanation: "Ionic radius increases down a group as electrons are added to higher shells. Iodide (I⁻) is largest with 8 shells, while fluoride (F⁻) is smallest with only 3 shells. The order follows the periodic trend: I⁻ > Br⁻ > Cl⁻ > F⁻.",
+    relatedElements: ["F", "Cl", "Br", "I"],
+  },
+  {
+    id: "q51",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Which statement correctly explains why second ionisation energy shows a huge jump at certain elements?",
+    options: [
+      "The nuclear charge suddenly increases",
+      "When removing an electron from a filled/stable subshell (like 2s² or a noble gas core), the energy required is dramatically higher",
+      "All elements show the same ionisation energy trend",
+      "Only transition metals show ionisation energy jumps"
+    ],
+    correctAnswer: "When removing an electron from a filled/stable subshell (like 2s² or a noble gas core), the energy required is dramatically higher",
+    explanation: "Large jumps in IE occur when you move from a stable configuration to an unstable one. For example, Mg: IE₁ (3s²→3s¹) = 738 kJ/mol, but IE₂ (3s¹→0) = 1451 kJ/mol is only moderately higher. However, for Al: IE₂ (3p¹→0) = 1817, IE₃ (2p⁶→2p⁵, breaking Ne core) jumps to 11,600! The huge jump occurs when breaking into a stable inner shell.",
+    relatedElements: ["Mg", "Al"],
+  },
+  {
+    id: "q52",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Which element has the largest effective nuclear charge experienced by its outermost electron?",
+    options: [
+      "Sodium (Na)",
+      "Fluorine (F)",
+      "Potassium (K)",
+      "Neon (Ne)"
+    ],
+    correctAnswer: "Fluorine (F)",
+    explanation: "Effective nuclear charge (Z_eff) is highest for fluorine. Although neon has the same number of electrons (10), it also has the same number of protons (10), so Z_eff = 10 - shielding for both. Fluorine (9 protons, 10 electrons) experiences strong attraction from its nucleus to the valence electrons. Sodium and potassium have lower Z_eff due to more electron shielding.",
+    relatedElements: ["F"],
+  },
+  {
+    id: "q53",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Why do elements in the same group (vertical column) show similar chemical properties?",
+    options: [
+      "They have the same atomic number",
+      "They have the same number of valence electrons and similar Z_eff for the outermost shell, leading to similar reactivity patterns",
+      "They are always adjacent to each other",
+      "They have identical electron configurations"
+    ],
+    correctAnswer: "They have the same number of valence electrons and similar Z_eff for the outermost shell, leading to similar reactivity patterns",
+    explanation: "Elements in the same group have identical valence electron configurations (e.g., all halogens have ns² np⁵). Although Z_eff increases down the group, the chemical character is determined primarily by the number and arrangement of valence electrons, which are the same. This is why Na and K are both highly reactive metals.",
+    relatedElements: ["Na", "K"],
+  },
+  {
+    id: "q54",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Which element's atom shows the greatest decrease in size compared to its neighbouring elements?",
+    options: [
+      "Hydrogen (H)",
+      "Gallium (Ga) due to d-block contraction",
+      "Silver (Ag) due to lanthanide contraction",
+      "Zinc (Zn)"
+    ],
+    correctAnswer: "Gallium (Ga) due to d-block contraction",
+    explanation: "Gallium shows one of the most striking size anomalies. Aluminium (period 3) is larger than Gallium (period 4) due to the 10 d-block elements of period 4 causing orbital contraction. Ga is actually smaller than Al despite being in the next period down, making Ga and Al anomalously similar in size.",
+    relatedElements: ["Ga", "Al"],
+  },
+  {
+    id: "q55",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Arrange these cations by size (largest to smallest): Na⁺, K⁺, Cs⁺, Li⁺",
+    options: [
+      "Na⁺ > K⁺ > Cs⁺ > Li⁺",
+      "Cs⁺ > K⁺ > Na⁺ > Li⁺",
+      "Li⁺ > Na⁺ > K⁺ > Cs⁺",
+      "K⁺ > Cs⁺ > Na⁺ > Li⁺"
+    ],
+    correctAnswer: "Cs⁺ > K⁺ > Na⁺ > Li⁺",
+    explanation: "Ionic radius increases down a group. Cesium (Cs⁺) has the most electron shells (6 shells), so it is the largest. Lithium (Li⁺) has only 2 shells and is the smallest. All these ions are isoelectronic (each has 10 electrons like neon), so differences in size are purely due to the number of shells and nuclear charge.",
+    relatedElements: ["Li", "Na", "K", "Cs"],
+  },
+  {
+    id: "q56",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Why are transition metals such effective catalysts?",
+    options: [
+      "They are harder than other metals",
+      "They have multiple available oxidation states and can accept/donate electrons, allowing them to stabilise intermediates and lower activation energy",
+      "They are always magnetic",
+      "They form only ionic compounds"
+    ],
+    correctAnswer: "They have multiple available oxidation states and can accept/donate electrons, allowing them to stabilise intermediates and lower activation energy",
+    explanation: "Transition metals are excellent catalysts because their d electrons allow them to access multiple oxidation states. For example, Fe³⁺ can be reduced to Fe²⁺ and re-oxidised, facilitating electron transfer reactions. This ability to change oxidation state and interact with reactants is the key to catalytic activity.",
+    relatedElements: ["Fe", "Cu", "Mn"],
+  },
+  {
+    id: "q57",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Historically, noble gases were called 'inert gases.' What conceptual shift in chemistry led to this term being rejected?",
+    options: [
+      "Noble gases were proven to be radioactive",
+      "The discovery of noble gas compounds like XeF₂ showed they could form bonds under certain conditions, demonstrating they are not completely inert",
+      "Noble gases became cheaper to produce",
+      "Scientists preferred the term 'noble' over 'inert'"
+    ],
+    correctAnswer: "The discovery of noble gas compounds like XeF₂ showed they could form bonds under certain conditions, demonstrating they are not completely inert",
+    explanation: "For decades, noble gases were thought to be completely unreactive due to their filled outer shells. However, in 1962, Bartlett synthesised XeF₂, proving noble gases could form compounds with highly electronegative elements. This discovery revolutionised our understanding and showed that 'inert' was misleading; 'noble' is more accurate, indicating low reactivity but not absolute inertness.",
+    relatedElements: ["Xe"],
+  },
+  {
+    id: "q58",
+    type: "multiple_choice",
+    difficulty: "school",
+    prompt: "Why are alkali metals stored under mineral oil or inert gas rather than in air?",
+    options: [
+      "Oil prevents oxidation by keeping them away from oxygen and moisture in the air, as alkali metals react rapidly with both",
+      "Oil makes them heavier so they do not float away",
+      "Alkali metals are cheaper when stored in oil",
+      "Oil improves their electrical conductivity"
+    ],
+    correctAnswer: "Oil prevents oxidation by keeping them away from oxygen and moisture in the air, as alkali metals react rapidly with both",
+    explanation: "Alkali metals like sodium and potassium are extremely reactive. They react vigorously with oxygen to form oxides and with water to form hydroxides and hydrogen gas, often igniting. Oil (or argon gas) provides an inert barrier that prevents contact with air and moisture, preserving the metal's integrity.",
+    relatedElements: ["Na", "K"],
+  },
+  {
+    id: "q59",
+    type: "comparison",
+    difficulty: "school",
+    prompt: "Why do elements in the same group (e.g., Li, Na, K) show similar chemical behaviour despite huge differences in atomic number?",
+    options: [
+      "They have the same mass number",
+      "They have identical numbers of valence electrons in the same type of orbital (all ns¹), so their chemical properties are determined by these outer electrons",
+      "They are all radioactive",
+      "Group number does not matter for chemical properties"
+    ],
+    correctAnswer: "They have identical numbers of valence electrons in the same type of orbital (all ns¹), so their chemical properties are determined by these outer electrons",
+    explanation: "Chemical properties are determined primarily by valence electrons. Lithium, sodium, and potassium all have one s¹ valence electron, so they all form +1 ions and react similarly with water and oxygen. The inner electrons (which differ greatly between Li and K) are shielded and less important for reactivity.",
+    relatedElements: ["Li", "Na", "K"],
+  },
+  {
+    id: "q60",
+    type: "multiple_choice",
+    difficulty: "school",
+    prompt: "Why does atomic radius decrease as you move from left to right across a period?",
+    options: [
+      "Elements on the right are younger and smaller",
+      "Electrons are added to the same shell, but nuclear charge increases, pulling electrons closer with no additional shielding",
+      "Atomic radius always increases in the periodic table",
+      "Right-side elements have fewer neutrons"
+    ],
+    correctAnswer: "Electrons are added to the same shell, but nuclear charge increases, pulling electrons closer with no additional shielding",
+    explanation: "Across a period, each element adds one proton and one electron to the same shell. Although shielding increases slightly, the increased nuclear charge pulls the electrons much closer. The net result is that atomic radius decreases steadily from left (Na) to right (Ar) across a period.",
+    relatedElements: ["Na", "Ar"],
+  },
+  {
+    id: "q61",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "What fundamental phenomenon explains the entire periodic trend of elemental properties?",
+    options: [
+      "The periodic filling of electron shells and subshells with similar orbital character every few elements",
+      "The alphabetical ordering of element names",
+      "The density of the nucleus",
+      "The age of the elements"
+    ],
+    correctAnswer: "The periodic filling of electron shells and subshells with similar orbital character every few elements",
+    explanation: "Periodicity arises because electron configurations repeat cyclically. After neon (full s and p in shell 2), sodium begins a new shell, restarting similar chemical behaviour. Every period marks the filling of an orbital type (s, p, d, or f), and elements with the same valence orbital types show similar properties. This is the foundation of the periodic law.",
+    relatedElements: ["Ne", "Na"],
+  },
+  {
+    id: "q62",
+    type: "multiple_choice",
+    difficulty: "school",
+    prompt: "Why is mercury (Hg) liquid at room temperature while other metals are solid?",
+    options: [
+      "Mercury is not a real metal",
+      "Relativistic effects on the d and f electrons cause Hg's 6s electrons to be more tightly bound and mobile, weakening metallic bonding",
+      "Mercury was formed at a different temperature",
+      "Mercury is the only liquid metal"
+    ],
+    correctAnswer: "Relativistic effects on the d and f electrons cause Hg's 6s electrons to be more tightly bound and mobile, weakening metallic bonding",
+    explanation: "Mercury's unusual liquid state at room temperature is due to relativistic quantum effects. The heavy nucleus of mercury (Z = 80) causes relativistic contraction of inner orbitals, making the outermost 6s electrons less effectively bonded to the metal lattice. This weakens metallic bonding, lowering the melting point to -39°C.",
+    relatedElements: ["Hg"],
+  },
+  {
+    id: "q63",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Why do transition metals and their compounds often display colours while most main group metal compounds are colourless?",
+    options: [
+      "Transition metals are always coloured because they are shiny",
+      "Transition metals have d electrons that can absorb visible light through d-d electronic transitions, where an electron jumps between d orbitals of different energies, creating colour",
+      "Main group metals are more reactive",
+      "Colour is determined by the number of neutrons"
+    ],
+    correctAnswer: "Transition metals have d electrons that can absorb visible light through d-d electronic transitions, where an electron jumps between d orbitals of different energies, creating colour",
+    explanation: "In transition metal compounds, d-orbital splitting (by ligand field effects) creates energy differences that correspond to visible light wavelengths. Electrons can absorb photons and jump between split d orbitals, causing selective absorption and giving the compound colour. Main group elements lack accessible d orbitals for this process.",
+    relatedElements: ["Fe", "Cu", "Cr"],
+  },
+  {
+    id: "q64",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "How does the concept of effective nuclear charge (Z_eff) explain why ionisation energy increases across a period?",
+    options: [
+      "The total nuclear charge decreases",
+      "As electrons are added across a period, shielding increases only slightly while nuclear charge increases significantly, increasing Z_eff for valence electrons",
+      "All electrons experience the same Z_eff",
+      "Nuclear charge and shielding cancel out"
+    ],
+    correctAnswer: "As electrons are added across a period, shielding increases only slightly while nuclear charge increases significantly, increasing Z_eff for valence electrons",
+    explanation: "Z_eff represents the net positive charge felt by valence electrons after accounting for shielding from inner electrons. Across a period (e.g., Na to Ar), electrons are added to the same shell, so shielding stays relatively constant. However, nuclear charge increases with each new proton, so Z_eff steadily increases, making it harder to remove valence electrons (increasing IE).",
+    relatedElements: ["Na", "Ar"],
+  },
+  {
+    id: "q65",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Which accurately describes the screening effect in atoms?",
+    options: [
+      "Inner electrons block the attraction of the nucleus from outer electrons, reducing the effective nuclear charge",
+      "Outer electrons screen the nucleus from other atoms",
+      "Screening only occurs in transition metals",
+      "Screening prevents all electron-nucleus interactions"
+    ],
+    correctAnswer: "Inner electrons block the attraction of the nucleus from outer electrons, reducing the effective nuclear charge",
+    explanation: "The screening effect (or shielding) describes how inner electrons repel and partially block the attractive force of the nucleus on outer electrons. A valence electron in sodium 'sees' a nucleus with Z = 11, but inner electrons reduce this to Z_eff ~ 2. Without screening, ionisation would require far more energy.",
+    relatedElements: ["Na"],
+  },
+  {
+    id: "q66",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "What is the inert pair effect, and which elements show it most prominently?",
+    options: [
+      "The tendency of two inert gases to bond together",
+      "In heavier p-block elements, the ns² electrons resist removal, preferring to remain inert while only np electrons are ionised; seen in Tl⁺ vs Tl³⁺ and Pb²⁺ vs Pb⁴⁺",
+      "All pairs of electrons are inert",
+      "The effect only occurs in noble gases"
+    ],
+    correctAnswer: "In heavier p-block elements, the ns² electrons resist removal, preferring to remain inert while only np electrons are ionised; seen in Tl⁺ vs Tl³⁺ and Pb²⁺ vs Pb⁴⁺",
+    explanation: "The inert pair effect occurs in elements like thallium and lead. Although their group numbers suggest they should lose all valence electrons (Tl has 3, Pb has 4), the ns² pair is unusually stable due to relativistic effects. Thallium prefers Tl⁺ (losing only np¹) over Tl³⁺, and lead prefers Pb²⁺ (losing only np²) over Pb⁴⁺.",
+    relatedElements: ["Tl", "Pb"],
+  },
+  {
+    id: "q67",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "Why does lead form Pb²⁺ more readily than Pb⁴⁺ despite being in Group 14?",
+    options: [
+      "Lead is not in Group 14",
+      "The inert pair effect causes the 6s² electrons to be tightly bound, making it easier to lose only the 6p² electrons and form Pb²⁺",
+      "Pb⁴⁺ is radioactive",
+      "Group 14 elements cannot form +4 ions"
+    ],
+    correctAnswer: "The inert pair effect causes the 6s² electrons to be tightly bound, making it easier to lose only the 6p² electrons and form Pb²⁺",
+    explanation: "Lead (6s² 6p²) would be expected to lose all four electrons based on its group. However, relativistic contraction makes the 6s² pair exceptionally stable. Ionising Pb to Pb²⁺ (removing 6p²) is energetically favourable, while removing the 6s² would cost too much energy. This is why Pb²⁺ compounds are much more common than Pb⁴⁺.",
+    relatedElements: ["Pb"],
+  },
+  {
+    id: "q68",
+    type: "multiple_choice",
+    difficulty: "school",
+    prompt: "Why are cations generally smaller than their parent neutral atoms?",
+    options: [
+      "Cations lose mass when they lose electrons",
+      "With fewer electrons, the nuclear charge pulls remaining electrons closer, and electron-electron repulsion decreases, shrinking the ion",
+      "Cations are always larger than neutral atoms",
+      "The nucleus contracts when electrons are removed"
+    ],
+    correctAnswer: "With fewer electrons, the nuclear charge pulls remaining electrons closer, and electron-electron repulsion decreases, shrinking the ion",
+    explanation: "When an atom loses an electron to become a cation, the remaining electrons experience stronger effective nuclear charge (same number of protons, fewer electrons to shield). Additionally, electron-electron repulsion decreases. Both effects cause the electron cloud to contract, making cations smaller than their neutral atoms.",
+    relatedElements: ["Na"],
+  },
+  {
+    id: "q69",
+    type: "comparison",
+    difficulty: "school",
+    prompt: "Why are anions generally larger than their parent neutral atoms?",
+    options: [
+      "Anions gain mass from electrons",
+      "Adding an electron increases electron-electron repulsion, pushing electrons apart and expanding the electron cloud, while the nuclear charge per electron decreases",
+      "Anions are always the same size as neutral atoms",
+      "The nucleus expands when an electron is added"
+    ],
+    correctAnswer: "Adding an electron increases electron-electron repulsion, pushing electrons apart and expanding the electron cloud, while the nuclear charge per electron decreases",
+    explanation: "When an atom gains an electron to become an anion, the electron cloud expands due to increased repulsion between electrons. Simultaneously, the effective nuclear charge per electron decreases (same number of protons, more electrons to shield each other). Both effects make anions larger than their neutral atoms.",
+    relatedElements: ["Cl"],
+  },
+  {
+    id: "q70",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "How does the size of a cation compare to the size of the next noble gas with the same number of electrons?",
+    options: [
+      "Cations are always larger",
+      "Cations are always smaller because they have more protons pulling the same number of electrons closer",
+      "They are always the same size",
+      "It depends on whether they form ionic or covalent bonds"
+    ],
+    correctAnswer: "Cations are always smaller because they have more protons pulling the same number of electrons closer",
+    explanation: "Consider Na⁺ and Ne: both have 10 electrons. However, Na⁺ has 11 protons while Ne has only 10. The extra proton in Na⁺ pulls the 10 electrons closer, making Na⁺ smaller than Ne. This is why isoelectronic series show: cations < neutral atoms < anions, with nuclear charge determining size.",
+    relatedElements: ["Na", "Ne"],
+  },
+  {
+    id: "q71",
+    type: "multiple_choice",
+    difficulty: "school",
+    prompt: "What is electronegativity, and why is it important in predicting bond character?",
+    options: [
+      "The mass of an electron",
+      "The ability of an atom to attract shared electrons in a bond; large differences indicate ionic character while small differences indicate covalent character",
+      "The charge of the electron",
+      "How fast an electron moves"
+    ],
+    correctAnswer: "The ability of an atom to attract shared electrons in a bond; large differences indicate ionic character while small differences indicate covalent character",
+    explanation: "Electronegativity (χ) measures an atom's tendency to attract shared electrons. When two atoms bonded have very different electronegativities (like Na and Cl, Δχ ≈ 2.2), the bond is largely ionic. When electronegativities are similar (like H and Cl, Δχ ≈ 0.9), the bond is covalent with some polar character.",
+    relatedElements: ["Na", "Cl", "H"],
+  },
+  {
+    id: "q72",
+    type: "comparison",
+    difficulty: "advanced",
+    prompt: "Why is oxygen's electronegativity (3.44) lower than fluorine's (3.98) but higher than nitrogen's (3.04)?",
+    options: [
+      "Oxygen has more protons than nitrogen",
+      "Oxygen is smaller than nitrogen, giving it stronger electron attraction, but fluorine is even smaller, resulting in the order: F > O > N",
+      "Electronegativity is random",
+      "Oxygen is more reactive than fluorine"
+    ],
+    correctAnswer: "Oxygen is smaller than nitrogen, giving it stronger electron attraction, but fluorine is even smaller, resulting in the order: F > O > N",
+    explanation: "Electronegativity increases across a period (left to right) and up a group (bottom to top). Nitrogen (2p³) and oxygen (2p⁴) are in the same period, but oxygen is slightly smaller and has greater nuclear charge, so it's more electronegative. Fluorine, being even smaller and further right, has the highest electronegativity of all elements.",
+    relatedElements: ["N", "O", "F"],
+  },
+  {
+    id: "q73",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "What trend in successive ionisation energies (IE₁, IE₂, IE₃...) tells us about orbital structure?",
+    options: [
+      "IE always increases uniformly",
+      "Large jumps in IE occur when breaking into a new, more stable shell or filled subshell; gradual increases occur within the same orbital",
+      "IE never jumps; it always increases smoothly",
+      "IE trends are random and unpredictable"
+    ],
+    correctAnswer: "Large jumps in IE occur when breaking into a new, more stable shell or filled subshell; gradual increases occur within the same orbital",
+    explanation: "Successive IE values reveal electron configuration. For aluminium: IE₁ to IE₃ remove the 3p¹ and 3s² relatively smoothly, but IE₄ (breaking the 2p⁶ filled subshell) jumps dramatically from ~3000 to ~11,600 kJ/mol. These jumps mark the boundaries between orbitals and are key evidence for quantum orbital structure.",
+    relatedElements: ["Al"],
+  },
+  {
+    id: "q74",
+    type: "multiple_choice",
+    difficulty: "school",
+    prompt: "Why do period 4 elements like gallium show anomalies in size and properties compared to period 3?",
+    options: [
+      "The 4s orbital is smaller than the 3s orbital",
+      "The d-block contraction: the 10 transition metals in period 4 have high nuclear charge but do not add electrons to the outer shell, contracting all orbitals; gallium ends up similar in size to aluminium above it",
+      "Gallium is radioactive",
+      "Period 4 elements are always smaller"
+    ],
+    correctAnswer: "The d-block contraction: the 10 transition metals in period 4 have high nuclear charge but do not add electrons to the outer shell, contracting all orbitals; gallium ends up similar in size to aluminium above it",
+    explanation: "Unlike the usual trend where period 4 > period 3, gallium is anomalously close in size to aluminium. This is because filling the 3d subshell between Al and Ga adds 10 protons of nuclear charge without adding electrons to the 4s/4p orbitals. This orbital contraction makes Ga nearly as small as Al, disrupting the normal periodic size trend.",
+    relatedElements: ["Ga", "Al"],
+  },
+  {
+    id: "q75",
+    type: "multiple_choice",
+    difficulty: "advanced",
+    prompt: "How does lanthanide contraction affect the chemistry of 5d transition metals compared to 4d transition metals?",
+    options: [
+      "5d metals are always much larger than 4d metals",
+      "Lanthanide contraction causes 5d elements like W, Pt, and Au to be almost the same size as their 4d neighbours above them, leading to anomalously similar properties between 4d and 5d elements that are normally in different periods",
+      "The lanthanide series does not affect transition metals",
+      "5d metals have completely different properties from 4d metals"
+    ],
+    correctAnswer: "Lanthanide contraction causes 5d elements like W, Pt, and Au to be almost the same size as their 4d neighbours above them, leading to anomalously similar properties between 4d and 5d elements that are normally in different periods",
+    explanation: "The 14 lanthanides (4f¹⁻¹⁴) fill between periods 5 and 6 with high nuclear charge but poor electron shielding of outer orbitals. This contracts all subsequent orbitals significantly. Tungsten (W, 5d⁴) has almost the same atomic radius as molybdenum (Mo, 4d⁵), and platinum (Pt) is similar to palladium (Pd). This size similarity causes anomalously parallel chemistry.",
+    relatedElements: ["W", "Mo", "Pt", "Pd"],
+  },
 ];
 
 export function getQuizzesByDifficulty(difficulty: string): QuizQuestion[] {

@@ -197,6 +197,56 @@ export const collections: ThematicCollection[] = [
     category: "space",
     difficulty: "beginner",
   },
+  {
+    id: "diagonal-relationships",
+    name: "Diagonal Relationships",
+    emoji: "↗️",
+    description:
+      "Elements that share properties diagonally across the periodic table. Li resembles Mg more than Na, Be resembles Al more than Ca, and B resembles Si more than Al.",
+    elements: [3, 12, 4, 13, 5, 14],
+    category: "everyday",
+    difficulty: "advanced",
+  },
+  {
+    id: "anomalous-electron-configs",
+    name: "Anomalous Electron Configurations",
+    emoji: "⚛️",
+    description:
+      "Elements whose actual electron configurations differ from predictions. Half-filled and fully-filled d subshells provide extra stability.",
+    elements: [24, 29, 42, 47, 79, 46, 41, 44, 45, 78],
+    category: "everyday",
+    difficulty: "advanced",
+  },
+  {
+    id: "lanthanide-contraction",
+    name: "Lanthanide Contraction Effects",
+    emoji: "🔻",
+    description:
+      "The lanthanide contraction causes the 5d transition metals to be almost the same size as their 4d counterparts. Hf and Zr have nearly identical radii despite Hf having 32 more electrons.",
+    elements: [57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 40],
+    category: "everyday",
+    difficulty: "advanced",
+  },
+  {
+    id: "inert-pair-effect",
+    name: "Inert Pair Effect",
+    emoji: "👥",
+    description:
+      "In heavier p-block elements, the s-electron pair becomes reluctant to participate in bonding. This is why Pb²⁺ is more stable than Pb⁴⁺, and Tl⁺ is more stable than Tl³⁺.",
+    elements: [81, 82, 83, 50, 49, 31],
+    category: "everyday",
+    difficulty: "advanced",
+  },
+  {
+    id: "variable-oxidation-states",
+    name: "Variable Oxidation States",
+    emoji: "♻️",
+    description:
+      "Transition metals can show multiple oxidation states because the energy difference between their d and s electrons is small. Manganese shows the widest range: +2 to +7.",
+    elements: [26, 29, 25, 24, 23, 27, 28, 22],
+    category: "everyday",
+    difficulty: "school",
+  },
 ];
 
 export function getCollection(id: string): ThematicCollection | undefined {

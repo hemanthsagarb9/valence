@@ -4,6 +4,7 @@ import { Element, LearningLevel } from "@/lib/types";
 import { categoryNames } from "@/data/elements";
 import { getFamilyInfo } from "@/data/families";
 import ElectronShell3D from "./ElectronShell3D";
+import SuccessiveIEChart from "./SuccessiveIEChart";
 import { X } from "lucide-react";
 
 // Category → RGB used as the single accent throughout the card
@@ -166,6 +167,11 @@ export default function ElementDetailCard({
           ))}
         </div>
 
+        {/* ── Successive IE Chart ── */}
+        {element.successiveIE && element.successiveIE.length > 1 && (
+          <SuccessiveIEChart energies={element.successiveIE} rgb={rgb} />
+        )}
+
         {/* ── Info sections ── */}
         <div className="space-y-4 mb-5">
           <InfoSection
@@ -184,6 +190,10 @@ export default function ElementDetailCard({
 
           <InfoSection rgb={rgb} label="In the Real World" text={element.realWorld} />
           <InfoSection rgb={rgb} label="Where Is It Found?" text={element.abundance} />
+
+          {element.jeeNote && (
+            <InfoSection rgb={rgb} label="JEE Focus" text={element.jeeNote} />
+          )}
         </div>
 
       </div>
