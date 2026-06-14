@@ -253,7 +253,7 @@ export default function PeriodicTable() {
     <div className="min-h-screen bg-[var(--bg-primary)]">
       {/* ── Mobile gate ── */}
       <div className="lg:hidden flex items-center justify-center min-h-screen px-8">
-        <div className="text-center max-w-xs">
+        <div className="flex flex-col items-center text-center max-w-xs">
           <Logo size={48} />
           <h1 className="text-lg font-bold text-gray-800 dark:text-gray-100 mt-4">Periodic Table</h1>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
